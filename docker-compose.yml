@@ -1,0 +1,11 @@
+version: "2"
+services:
+  neo4j:
+    image: springapp
+    build: neo4j/
+    restart: always
+    network_mode: "host"
+    ports:
+      - 8082:8082
+    expose:
+      - 8082
